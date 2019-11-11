@@ -1,0 +1,16 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: reactive
+logging:
+  level:
+    org.springframework: INFO
+    com.mycompany.mimecasttest.textsearch: DEBUG
+
+myapp:
+  documentation:
+    version: '@project.version@'
+    title: Text Search API
+    description: '@project.description@'
+  proxy-url: localhost
+  servers: localhost, swathi12
